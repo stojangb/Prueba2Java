@@ -4,78 +4,50 @@ import java.util.Scanner;
 
 
 public class Test_Liquidación {
-     Scanner scan = new Scanner(System.in);  
-     
-       private String rut,nombre;
-        
-       public int dt,sb,cf; // dias trabajados , sueldo base , carga familiar 
-       public double he; //horas extra
         
      
-     public String Setrut(String rut){
-      return this.rut = rut;
-      }
-     
-     public int Getdt(){
-     return dt;
-     }
+       
+ 
+       
 
     public static void main(String[] args) {
-      
-      Test_Liquidación liquid = new Test_Liquidación();
-      
-      
-      
-      
- 
         
-        Automoviles car = new Automoviles();
-        System.out.print("");
-        System.out.print(car.getMarca());
-        System.out.println("");
+        Scanner scan = new Scanner(System.in);
         
-        System.out.println("Esto deberia mostrar la suma de 4 y 5");
+        Imponible Impon = new Imponible();
+         
+        System.out.println("Por favor ingrese Nombre: ");    
         
-        System.out.println(car.cuatro+car.cinco);
+        Impon.setNombre(scan.next());
         
+        System.out.println("Por favor ingrese RUT: ");  
         
-        System.out.println("Hola");
-        
-    
-        
-   
-        
-        System.out.println("Por favor ingrese Nombre: ");
-        //liquid.nombre = scan.next();
-        System.out.println("Por favor ingrese RUT: ");
-        liquid.rut = "hola rut";
-        //liquid.Setrut(rut) = scan.next();          
-       
+        Impon.setRut(scan.next());
         
         System.out.println("Por favor ingrese Días trabajados: ");
-        //liquid.dt = scan.nextInt();
-        System.out.println("Por favor ingrese Sueldo Base: ");
-       // liquid.sb = scan.nextInt();
-        System.out.println("Por favor ingrese carga familiar: ");
-       // liquid.cf = scan.nextInt();
-        System.out.println("Por favor ingrese, Si ha trabajado horas extra la cantidad de horas extra trabajadas: ");
-       // liquid.he = scan.nextDouble();        
-        //debo enviar estos datos mediante referencia a objetoa a imponible
         
-            
-    //Métodos
+        Impon.setDt(scan.nextInt());
+        
+        System.out.println("Por favor ingrese Sueldo Base: ");
+        
+        Impon.setSb(scan.nextInt());
+     
+        System.out.println("Por favor ingrese carga familiar: ");
+        
+        Impon.setCf(scan.nextInt());
+  
+        System.out.println("Por favor ingrese, Si ha trabajado horas extra la cantidad de horas extra trabajadas: ");
+        Impon.setHe(scan.nextDouble());
     
 
-    
-        
         
         
         System.out.println("");
         System.out.println("LIQUIDACION DE SUELDO POR PANTALLA\n" +
 "****************** DATOS DEL TRABAJADOR****************************\n" +
-"Rut : (1 puntos)\n" +
-"Nombre : (1 puntos)\n" +
-"Días Trabajados : (1 puntos)\n" +
+"Rut : "+Impon.rut+"\n" +
+"Nombre : "+Impon.nombre+"\n" +
+"Días Trabajados : \n" +
 "Sueldo Base : (1 puntos)\n" +
 "Numero Horas Extras : (1 puntos)\n" +
 "Cargas Familiares : (1 puntos)\n" +
