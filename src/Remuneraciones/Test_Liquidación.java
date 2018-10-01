@@ -1,47 +1,72 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Remuneraciones;
 import java.util.Scanner;
 
-/**
- *
- * @author 19759309-1
- */
-public class Test_Liquidación {
 
-    /**
-     * @param args the command line arguments
-     */
+public class Test_Liquidación {
+     Scanner scan = new Scanner(System.in);  
+     
+       private String rut,nombre;
+        
+       public int dt,sb,cf; // dias trabajados , sueldo base , carga familiar 
+       public double he; //horas extra
+        
+     
+     public String Setrut(String rut){
+      return this.rut = rut;
+      }
+     
+     public int Getdt(){
+     return dt;
+     }
+
     public static void main(String[] args) {
-        
-        
-      Scanner scan = new Scanner(System.in);  
       
-//      
-//      
-//      
-//        System.out.print("Esto deberia mostrar la marca: ");
-//        
-//        Automoviles car = new Automoviles();
-//        System.out.print("");
-//        System.out.print(car.getMarca());
-//        System.out.println("");
-//        
-//        System.out.println("Esto deberia mostrar la suma de 4 y 5");
-//        
-//        System.out.println(car.cuatro+car.cinco);
-//        
-//        
-//        System.out.println("Hola");
+      Test_Liquidación liquid = new Test_Liquidación();
+      
+      
+      
+      
+ 
         
-        //definiendo metodos
-        String rut,nombre;
+        Automoviles car = new Automoviles();
+        System.out.print("");
+        System.out.print(car.getMarca());
+        System.out.println("");
         
-        int dt,sb,cf; // dias trabajados , sueldo base , carga familiar 
-        double he; //horas extra
+        System.out.println("Esto deberia mostrar la suma de 4 y 5");
+        
+        System.out.println(car.cuatro+car.cinco);
+        
+        
+        System.out.println("Hola");
+        
+    
+        
+   
+        
+        System.out.println("Por favor ingrese Nombre: ");
+        //liquid.nombre = scan.next();
+        System.out.println("Por favor ingrese RUT: ");
+        liquid.rut = "hola rut";
+        //liquid.Setrut(rut) = scan.next();          
+       
+        
+        System.out.println("Por favor ingrese Días trabajados: ");
+        //liquid.dt = scan.nextInt();
+        System.out.println("Por favor ingrese Sueldo Base: ");
+       // liquid.sb = scan.nextInt();
+        System.out.println("Por favor ingrese carga familiar: ");
+       // liquid.cf = scan.nextInt();
+        System.out.println("Por favor ingrese, Si ha trabajado horas extra la cantidad de horas extra trabajadas: ");
+       // liquid.he = scan.nextDouble();        
+        //debo enviar estos datos mediante referencia a objetoa a imponible
+        
+            
+    //Métodos
+    
+
+    
         
         
         
@@ -79,12 +104,14 @@ public class Test_Liquidación {
              
         
         
-        
+     
         
         
 
         
                 
     }
+
+
     
 }
